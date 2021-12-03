@@ -21,7 +21,12 @@
     "note",
     "scale"
   ],
-  "author": "Ramiro Gómez",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yaph/cromatica.git"
+  },
+  "homepage": "https://github.com/yaph/cromatica",
+  "author": "Ramiro Gómez (https://ramiro.org)",
   "license": "MIT",
   "devDependencies": {
     "esbuild": "^0.14.1",
