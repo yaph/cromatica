@@ -9,6 +9,7 @@
   "scripts": {
     "build": "node build.js",
     "clean": "rm dist/*",
+    "release": "release-it",
     "test": "ava -v"
   },
   "keywords": [

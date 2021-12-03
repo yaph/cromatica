@@ -1,0 +1,10 @@
+{
+  "git": {
+    "commitMessage": "Release ${version}",
+    "changelog": "git log --pretty=format:\"* %s (%h)\" ${from}...${to}"
+  },
+  "github": {
+    "release": true,
+    "releaseName": "Version ${version}"
+  }
+}
