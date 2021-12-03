@@ -78,9 +78,10 @@ const noteColors = new Map<string, string>([
  *
  * @param note - The name of the note
  */
-export function noteColor(note: string): string {
+export function noteColor(note: string): string | undefined {
     if (!enharmonicEquivalents.has(note)) {
+        console.error(`Note name ${note} not recognized.`);
         return;
     }
-    return noteColors.get(enharmonicEquivalents.get(note));
+    return noteColors.get(enharmonicEquivalents.get(note) as string);
 }

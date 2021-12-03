@@ -1,17 +1,16 @@
-const { build } = require('esbuild')
-const { Generator } = require('npm-dts')
-
-
-new Generator({
-  entry: 'src/index.ts',
-  output: 'dist/index.d.ts'
-}).generate();
+import { build } from 'esbuild'
 
 
 const shared = {
     entryPoints: ['src/index.ts'],
     bundle: true,
-    minify: true
+    minify: true,
+    watch: {
+        onRebuild(error, result) {
+            if (error) console.error('watch build failed:', error)
+            else console.log('watch build succeeded:', result)
+        }
+    }
 };
 
 
