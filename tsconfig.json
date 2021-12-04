@@ -1,13 +1,13 @@
 {
   "compilerOptions": {
-    "lib": ["esnext", "dom"],
-    "module": "commonjs",
+    "moduleResolution": "node",
+    "exactOptionalPropertyTypes": true,
+    "module": "esnext",
     "noImplicitAny": true,
-    "removeComments": true,
     "preserveConstEnums": true,
+    "removeComments": true,
     "sourceMap": true,
     "strictNullChecks": true,
-    "exactOptionalPropertyTypes": true
   },
   "include": ["src/**/*.ts"],
 }

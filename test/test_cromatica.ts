@@ -1,5 +1,5 @@
 import test from 'ava';
-import { noteColor } from '../dist/index.esm.js';
+import { noteColor } from '../src/index.js';
 
 
 test('noteColor() with double sharps', t => {
