@@ -1,6 +1,6 @@
 {
   "name": "cromatica",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A small library that defines a color scheme for the 12 musical notes in the chromatic scale.",
   "main": "src/index.ts",
   "module": "dist/index.esm.js",
