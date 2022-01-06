@@ -12,6 +12,9 @@
     "release": "release-it",
     "test": "ava -v"
   },
+  "files": [
+    "dist"
+  ],
   "keywords": [
     "chromatic",
     "scale",
